@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.viewmodel.viewModelFactory
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import com.example.android.weddingapp.R
 import com.example.android.weddingapp.data.EventDataBase
 import com.example.android.weddingapp.databinding.FragmentEventListBinding
@@ -38,6 +40,10 @@ class EventListFragment : Fragment() {
                 adapter.list = it
             }
         })
+        binding.addEventFAB.setOnClickListener{
+            Navigation.findNavController(it).navigate(
+                R.id.action_eventListFragment_to_createEventFragment)
+        }
         return binding.root
     }
 

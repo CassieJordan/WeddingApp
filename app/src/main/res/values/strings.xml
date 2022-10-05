@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">WeddingApp</string>
+    <string name="titleText">Title:</string>
+    <string name="enter_title">What is it? ex. dinner, ceremony</string>
+    <string name="timeText">Time:</string>
+    <string name="enter_time">When is it?</string>
+    <string name="locationText">Location:</string>
+    <string name="enter_location">Where is it?</string>
+    <string name="descriptionText">Description:</string>
+    <string name="enter_description">Enter a description of the event</string>
 </resources>

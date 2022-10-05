@@ -15,7 +15,11 @@ class EventListViewModel(application: Application) :
     private val repo = EventRepository(EventDataBase.getInstance(application).dao)
     val eventList = MutableLiveData<List<EventDataItem>>()
 
-    fun getEvents() {
+    init {
+        getEvents()
+    }
+
+    private fun getEvents() {
         viewModelScope.launch {
             val result = repo.getEvents()
 
