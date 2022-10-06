@@ -14,7 +14,7 @@ class EventRepository(private val dao: EventDataBaseDao) {
     }
 
     suspend fun getEvents(): List<EventDataItem> = withContext(Dispatchers.IO) {
-        return@withContext dao.getEvents().value!!
+        return@withContext dao.getEvents().value.orEmpty()
     }
 
     suspend fun clear() {
