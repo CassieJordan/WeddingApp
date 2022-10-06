@@ -7,7 +7,7 @@
 
         <variable
             name="event"
-            type="com.example.android.weddingapp.createEvent.CreateEventViewModel" />
+            type="com.example.android.weddingapp.eventList.EventDataItem" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -32,6 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:hint="@string/enter_title"
+            android:text="@{event.title}"
             app:layout_constraintBottom_toBottomOf="@+id/titleTV"
             app:layout_constraintStart_toEndOf="@+id/titleTV"
             app:layout_constraintTop_toTopOf="@+id/titleTV" />
@@ -52,6 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:hint="@string/enter_time"
+            android:text="@{event.time}"
             app:layout_constraintBottom_toBottomOf="@+id/timeTV"
             app:layout_constraintStart_toEndOf="@+id/timeTV"
             app:layout_constraintTop_toTopOf="@+id/timeTV" />
@@ -72,6 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:hint="@string/enter_location"
+            android:text="@{event.location}"
             app:layout_constraintBottom_toBottomOf="@+id/locationTV"
             app:layout_constraintStart_toEndOf="@+id/locationTV"
             app:layout_constraintTop_toTopOf="@+id/locationTV" />
@@ -92,9 +95,20 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:hint="@string/enter_description"
+            android:text="@{event.description}"
             app:layout_constraintBottom_toBottomOf="@+id/descriptionTV"
             app:layout_constraintStart_toEndOf="@+id/descriptionTV"
             app:layout_constraintTop_toTopOf="@+id/descriptionTV" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/create_event"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

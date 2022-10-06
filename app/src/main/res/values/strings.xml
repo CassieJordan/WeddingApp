@@ -8,4 +8,6 @@
     <string name="enter_location">Where is it?</string>
     <string name="descriptionText">Description:</string>
     <string name="enter_description">Enter a description of the event</string>
+    <string name="save">Save</string>
+    <string name="create_event">Create Event</string>
 </resources>
