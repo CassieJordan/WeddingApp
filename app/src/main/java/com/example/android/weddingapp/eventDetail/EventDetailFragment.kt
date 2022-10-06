@@ -1,4 +1,4 @@
-package com.example.android.weddingapp
+package com.example.android.weddingapp.eventDetail
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

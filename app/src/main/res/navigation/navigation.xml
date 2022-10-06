@@ -19,10 +19,10 @@
     </fragment>
     <fragment
         android:id="@+id/eventDetailFragment"
-        android:name="com.example.android.weddingapp.EventDetailFragment"
+        android:name="com.example.android.weddingapp.eventDetail.EventDetailFragment"
         android:label="EventDetailFragment" />
     <fragment
         android:id="@+id/createEventFragment"
-        android:name="com.example.android.weddingapp.CreateEventFragment"
+        android:name="com.example.android.weddingapp.createEvent.CreateEventFragment"
         android:label="CreateEventFragment" />
 </navigation>
